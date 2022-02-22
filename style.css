@@ -1,0 +1,181 @@
+body {
+  background: rgb(255, 255, 255);
+  display: flex;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 1000px;
+  background: white;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.container .left_box {
+  position: relative;
+  background: rgb(17, 21, 65);
+  padding: 40px;
+}
+
+.profile {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(168, 130, 238);
+}
+
+.profile .imgbox {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile .imgbox img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ptext {
+  color: rgb(241, 236, 236);
+  margin-top: 20px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+}
+.ptext h2 span {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+.info {
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
+.title {
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.info ul {
+  position: relative;
+}
+
+.info ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.info ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: rgb(20, 17, 180);
+}
+
+.info ul li span {
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+}
+
+.container .right_box {
+  position: relative;
+  background: rgb(255, 255, 255);
+  padding: 40px;
+}
+
+.about {
+  margin-bottom: 50px;
+}
+.about:last-child {
+  margin-bottom: 0;
+}
+.title2 {
+  color: rgb(42, 52, 158);
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+p {
+  color: rgb(40, 99, 107);
+  font-weight: 550;
+}
+.about1 .box {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 0 0;
+}
+.about1 .box .info {
+  min-width: 350px;
+}
+.about1 .box .info h5,
+h3 {
+  color: rgb(40, 99, 107);
+  font-weight: 600;
+}
+.about1 .box .year h5 {
+  color: rgb(40, 99, 107);
+  font-size: 16px;
+}
+
+/* Projects*/
+.title3 {
+  color: rgb(42, 52, 158);
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.project .box {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 0 0;
+}
+.project .box .info {
+  min-width: 350px;
+}
+.project .box .info h5 {
+  color: rgb(40, 99, 107);
+  font-weight: 600;
+}
+.project .box .year h5 {
+  color: rgb(40, 99, 107);
+  font-size: 16px;
+}
+
+/* interest*/
+
+.title4 {
+  color: rgb(42, 52, 158);
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.interest ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.interest ul li {
+  list-style: none;
+  color: rgb(40, 99, 107);
+  font-weight: 500;
+  margin: 10px 0;
+}
+.interest ul li .fa {
+  color: rgb(40, 99, 107);
+  font-size: 18px;
+  width: 20px;
+}
